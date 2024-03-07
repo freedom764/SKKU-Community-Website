@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>New Post</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="new_post.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="nav-wrapper">
+        <nav class="navbar">
+          <img src="assets/성균관대_01.png" alt="Community logo">
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a href="new_post.html">New Post</a>
+            </li>
+            <li class="nav-item">
+              <a href="chat.html">Chat</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html">My Profile</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content-wrapper">
+        <div class="wrapper">
+          <h1>New Post</h1>
+          <div class="inputBox">
+            <input type="text" placeholder="Topic" id="topic">
+          </div>
+          <div class="inputBox2">
+            <textarea id="msg" placeholder="Enter your text here..."></textarea>
+          </div>
+          <button class="loginBtn" id="postBtn">Post</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="new-post.js"></script>
+  </body>
+</html>

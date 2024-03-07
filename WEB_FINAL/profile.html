@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>SKKU Community Profile</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="nav-wrapper">
+        <nav class="navbar">
+          <img src="assets/성균관대_01.png" alt="Community logo">
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a href="new_post.html">New Post</a>
+            </li>
+            <li class="nav-item">
+              <a href="chat.html">Chat</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html">My Profile</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content-wrapper">
+        <div class="wrapper" id="wrapper">
+          <h1 id="user-header">Welcome</h1>
+          <div class="inputBox">
+            <input type="password" placeholder="New Password" id="password" required>
+            <i class='bx bxs-lock-alt'></i>
+          </div>
+          <button class="loginBtn" id="changePass">Change Password</button>
+          <button class="loginBtn" id="signOutBtn">Sign Out</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="profile.js"></script>
+  </body>
+</html>
